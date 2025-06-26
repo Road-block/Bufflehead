@@ -2,7 +2,7 @@
 ..\FrameXML\UI.xsd">
 
   <!-- Use a custom template for secure auras to handle buff cancel and tooltips -->
-  <Button name="BuffleheadAuraTemplate" inherits="SecureActionButtonTemplate, SecureHandlerBaseTemplate" virtual="true" framelevel="4">
+  <Button name="BuffleheadAuraTemplate" inherits="SecureActionButtonTemplate, SecureHandlerBaseTemplate" virtual="true" framelevel="4" registerForClicks="RightButtonDown">
     <Size x="32" y="32"/>
     <Attributes>
       <Attribute name="type2" value="cancelaura"/>
@@ -10,7 +10,6 @@
     <Scripts>
       <OnLoad>
         Bufflehead:Button_OnLoad(self)
-        self:RegisterForClicks("RightButtonDown")
       </OnLoad>
       <OnEnter>
         GameTooltip:SetOwner(self, "ANCHOR_BOTTOM", 0, 0)

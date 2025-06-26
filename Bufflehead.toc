@@ -1,4 +1,4 @@
-## Interface: 110002
+## Interface: 110107
 ## Title: Bufflehead
 ## Notes: Skins player buffs and debuffs
 ## Author: Tojaso/Tomber, Dorana, Dicebar

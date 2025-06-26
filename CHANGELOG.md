@@ -1,3 +1,6 @@
+# 26 June 2025
+- Fixed bug with right mouse button handler (thanks to ChrisKader for providing the fix!)
+
 # 20 August 2024
 - Added ranged weapon enchants support (ie. rogue poisons).
 - Added The War Within fixes (thanks TheAzkas for the temp fix!)
