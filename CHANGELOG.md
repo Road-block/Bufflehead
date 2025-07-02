@@ -1,3 +1,6 @@
+# 02 July 2025
+- Added Classic Mists of Pandaria support. 
+
 # 26 June 2025
 - Fixed bug with right mouse button handler (thanks to ChrisKader for providing the fix!)
 
