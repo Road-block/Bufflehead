@@ -766,7 +766,14 @@ local function SkinBar(button, duration, expire, barColor, barBorderColor)
 		local bh = (pp.barHeight > 0) and pp.barHeight or iconSize
 
 		bb:SetOrientation(pp.barOrientation and "HORIZONTAL" or "VERTICAL")
-		bb:SetFillStyle(pp.barDirection and "STANDARD" or "REVERSE")
+		local standard, reverse
+		if Enum and Enum.StatusBarFillStyle then
+			standard, reverse = Enum.StatusBarFillStyle.Standard, Enum.StatusBarFillStyle.Reverse
+		else
+			standard, reverse = "STANDARD", "REVERSE"
+		end
+		bb:SetFillStyle(pp.barDirection and standard or reverse)
+		bb:SetFillStyle(pp.barDirection and Enum.StatusBarFillStyle.Standard or Enum.StatusBarFillStyle.Reverse)
 
 		local tex = pp.barTexture
 		if tex == "None" then tex = nil end
@@ -888,7 +895,7 @@ function MOD:Button_OnAttributeChanged(k, v)
 				barColor = pp.barDebuffColor
 				barBorderColor = pp.barBorderDebuffColor
 				btype = btype or "none"
-				local c = _G.DebuffTypeColor[btype]
+				local c = SHIM.DebuffTypeColor[btype]
 				if c then
 					if pp.debuffColoring then borderColor = c end
 					if pp.barDebuffColoring then barColor = c end
@@ -1203,7 +1210,7 @@ local function UpdatePreviews()
 						barBorderColor = pp.barBorderDebuffColor
 						local btype = debuffTypes[count]
 						if btype ~= "none" then
-							local c = _G.DebuffTypeColor[btype]
+							local c = SHIM.DebuffTypeColor[btype]
 							if c then
 								if pp.debuffColoring then borderColor = c end
 								if pp.barDebuffColoring then barColor = c end

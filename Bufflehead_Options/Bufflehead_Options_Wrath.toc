@@ -1,4 +1,4 @@
-## Interface: 50500
+## Interface: 38001
 ## Title: Bufflehead Options
 ## Notes: Load-on-demand options for Bufflehead
 ## Author: Tojaso/Tomber, Dorana, Dicebar

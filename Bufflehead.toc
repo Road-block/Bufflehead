@@ -1,8 +1,9 @@
-## Interface: 110107
+## Interface: 50503,40402,38001,20505,11508,50504
 ## Title: Bufflehead
 ## Notes: Skins player buffs and debuffs
 ## Author: Tojaso/Tomber, Dorana, Dicebar
 ## Version: @project-version@
+## Category: Buffs & Debuffs
 ## DefaultState: enabled
 ## OptionalDependencies: Masque
 ## SavedVariables: BuffleheadDB
