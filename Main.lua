@@ -773,7 +773,6 @@ local function SkinBar(button, duration, expire, barColor, barBorderColor)
 			standard, reverse = "STANDARD", "REVERSE"
 		end
 		bb:SetFillStyle(pp.barDirection and standard or reverse)
-		bb:SetFillStyle(pp.barDirection and Enum.StatusBarFillStyle.Standard or Enum.StatusBarFillStyle.Reverse)
 
 		local tex = pp.barTexture
 		if tex == "None" then tex = nil end
