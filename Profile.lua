@@ -36,7 +36,7 @@ MOD.DefaultProfile = {
 		maxWraps = 2,
 		spaceX = 6, -- horizontal distance between icons (allow space for elements positioned between icons)
 		spaceY = 24, -- vertical distance between icons (allow space for elements positioned between icons)
-		sortMethod = "TIME", -- "INDEX", "NAME", "TIME"
+		sortMethod = "INDEX", -- "INDEX", "NAME", "TIME"
 		sortDirection = "-", -- ASCENDING = "+", DESCENDING = "-"
 		separateOwn = 0, -- 0 = don't separate, 1 = sort before others, -1 = sort after others
 		weaponEnchants = true, -- include weapon enchants in the buffs group
